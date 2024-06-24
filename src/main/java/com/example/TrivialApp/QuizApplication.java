@@ -12,12 +12,13 @@ import java.io.IOException;
 public class QuizApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(QuizApplication.class.getResource("home.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(QuizApplication.class.getResource("register.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
-        stage.initStyle(StageStyle.TRANSPARENT);
         scene.setFill(Color.TRANSPARENT);
+        stage.setResizable(false);
         stage.show();
+
     }
 
     public static void main(String[] args) {

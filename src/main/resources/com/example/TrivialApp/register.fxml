@@ -2,20 +2,27 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.geometry.Insets?>
-<GridPane fx:id="gridPane" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
-    <padding>
-        <Insets top="25" right="25" bottom="25" left="25"/>
-    </padding>
-
-    <Label text="Register" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" />
-
-    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-    <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-
-    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-
-    <Button text="Register" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2" onAction="#registerButtonClicked" />
-</GridPane>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.TrivialApp.RegisterController">
+   <children>
+      <Label layoutX="240.0" layoutY="46.0" prefHeight="45.0" prefWidth="121.0" text="Register">
+         <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="143.0" text="USerNAme" />
+      <Label layoutX="106.0" layoutY="192.0" text="Email" />
+      <Label layoutX="106.0" layoutY="240.0" text="Role" />
+      <TextField layoutX="186.0" layoutY="139.0" prefHeight="34.0" prefWidth="289.0" />
+      <TextField layoutX="186.0" layoutY="188.0" prefHeight="34.0" prefWidth="289.0" />
+      <ComboBox layoutX="186.0" layoutY="236.0" prefWidth="150.0" />
+      <Button layoutX="240.0" fx:id="registerBtn" layoutY="291.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: dodgerblue;" text="Register" textFill="#f8f5f5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="29.0" layoutY="362.0" text="already registered?" />
+      <Hyperlink layoutX="149.0" layoutY="359.0" text="login" />
+   </children>
+</AnchorPane>

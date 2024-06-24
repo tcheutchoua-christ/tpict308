@@ -2,11 +2,12 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="345.0" prefWidth="561.0" style="-fx-background-color: white; -fx-background-radius: 32px; -fx-border-radius: 32px;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.TrivialApp.HomeController">
    <children>
-      <Label layoutX="207.0" layoutY="81.0" text="Easy Quiz">
+      <Label layoutX="207.0" layoutY="81.0" text="Trivia Quiz">
          <font>
             <Font name="Open Sans Extrabold" size="30.0" />
          </font>
@@ -16,11 +17,7 @@
             <Font name="Open Sans Semibold" size="20.0" />
          </font>
       </Button>
-      <MenuButton layoutX="40.0" layoutY="48.0" mnemonicParsing="false" text="Role">
-        <items>
-          <MenuItem mnemonicParsing="true" text="Admin" />
-          <MenuItem mnemonicParsing="true" text="Player" />
-        </items>
-      </MenuButton>
+      <Polygon fill="DODGERBLUE" layoutX="433.0" layoutY="136.0" points="128.0, -38.0, 128.0, -136.0, 8.0, -136.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="DODGERBLUE" layoutX="50.0" layoutY="305.0" points="-50.0, 40.0, 50.0, 40.0, -50.0, -67.0" stroke="BLACK" strokeType="INSIDE" />
    </children>
 </AnchorPane>

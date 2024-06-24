@@ -2,20 +2,23 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.geometry.Insets?>
-<GridPane fx:id="gridPane" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
-    <padding>
-        <Insets top="25" right="25" bottom="25" left="25"/>
-    </padding>
-
-    <Label text="Login" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" />
-
-    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-    <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-
-    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-
-    <Button text="Login" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2" onAction="#loginButtonClicked" />
-</GridPane>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.TrivialApp.LoginController">
+    <children>
+        <Label layoutX="240.0" layoutY="46.0" prefHeight="45.0" prefWidth="121.0" text="Register">
+            <font>
+                <Font name="Comic Sans MS Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="90.0" layoutY="143.0" text="USerNAme" />
+        <Label layoutX="106.0" layoutY="192.0" text="Email" />
+        <TextField layoutX="186.0" layoutY="139.0" prefHeight="34.0" prefWidth="289.0" />
+        <TextField layoutX="186.0" layoutY="188.0" prefHeight="34.0" prefWidth="289.0" />
+        <Button fx:id="loginBtn" layoutX="233.0" layoutY="313.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="149.0" style="-fx-background-color: dodgerblue;" text="Login" textFill="#f8f5f5">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
